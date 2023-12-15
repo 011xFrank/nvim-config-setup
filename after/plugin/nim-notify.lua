@@ -7,5 +7,5 @@ notify.setup ({
     TRACE = "✎",
     WARN = ""
   },
-  timeout = 3000
+  timeout = 1000,
 })

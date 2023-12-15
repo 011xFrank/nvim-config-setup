@@ -58,5 +58,5 @@ return require('packer').startup(function(use)
     'akinsho/bufferline.nvim',
     tag = "*"
   }
-
+  
 end)
