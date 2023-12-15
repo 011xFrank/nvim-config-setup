@@ -11,7 +11,7 @@ map('n', '<space>3', '<Cmd>BufferGoto 3<CR>', opts)
 map('n', '<space>4', '<Cmd>BufferGoto 4<CR>', opts)
 map('n', '<space>0', '<Cmd>BufferLast<CR>', opts)
 
-map('n', '<M-c>', '<Cmd>BufferClose<CR>', opts)
+map('n', '<space>c', '<Cmd>BufferClose<CR>', opts)
 
 
 vim.g.barbar_auto_setup = false -- disable auto-setup
