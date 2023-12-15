@@ -2,16 +2,16 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
-map('n', '<space><Right>', '<Cmd>BufferNext<CR>', opts)
-map('n', '<space><Left>', '<Cmd>BufferPrevious<CR>', opts)
+map('n', 'b<Right>', '<Cmd>BufferNext<CR>', opts)
+map('n', 'b<Left>', '<Cmd>BufferPrevious<CR>', opts)
 -- Goto buffer in position...
-map('n', '<space>1', '<Cmd>BufferGoto 1<CR>', opts)
-map('n', '<space>2', '<Cmd>BufferGoto 2<CR>', opts)
-map('n', '<space>3', '<Cmd>BufferGoto 3<CR>', opts)
-map('n', '<space>4', '<Cmd>BufferGoto 4<CR>', opts)
-map('n', '<space>0', '<Cmd>BufferLast<CR>', opts)
+map('n', 'b1', '<Cmd>BufferGoto 1<CR>', opts)
+map('n', 'b2', '<Cmd>BufferGoto 2<CR>', opts)
+map('n', 'b3', '<Cmd>BufferGoto 3<CR>', opts)
+map('n', 'b4', '<Cmd>BufferGoto 4<CR>', opts)
+map('n', 'b0', '<Cmd>BufferLast<CR>', opts)
 
-map('n', '<space>c', '<Cmd>BufferClose<CR>', opts)
+map('n', 'bc', '<Cmd>BufferClose<CR>', opts)
 
 
 vim.g.barbar_auto_setup = false -- disable auto-setup
