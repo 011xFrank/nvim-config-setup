@@ -54,5 +54,9 @@ return require('packer').startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
-  use 'romgrk/barbar.nvim'
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "*"
+  }
+
 end)
