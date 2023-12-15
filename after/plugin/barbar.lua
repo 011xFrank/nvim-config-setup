@@ -22,14 +22,12 @@ map('n', '<M-c>', '<Cmd>BufferClose<CR>', opts)
 vim.g.barbar_auto_setup = false -- disable auto-setup
 
 require('barbar').setup {
-  preset = "powerline",
-
   -- Enable/disable animations
   animation = true,
 
   -- Automatically hide the tabline when there are this many buffers left.
   -- Set to any value >=0 to enable.
-  auto_hide = enable,
+  auto_hide = 1,
 
   -- Enable/disable current/total tabpages indicator (top right corner)
   tabpages = true,
@@ -44,13 +42,13 @@ require('barbar').setup {
   focus_on_close = 'left',
 
   -- Disable highlighting alternate buffers
-  highlight_alternate = true,
+  highlight_alternate = false,
 
   -- Disable highlighting file icons in inactive buffers
   highlight_inactive_file_icons = false,
 
   -- Enable highlighting visible buffers
-  highlight_visible = true,
+  highlight_visible = false,
 
   icons = {
     -- Configure the base icons on the bufferline.
@@ -85,7 +83,7 @@ require('barbar').setup {
 
     -- Configure the icons on the bufferline when modified or pinned.
     -- Supports all the base icon options.
-    modified = {button = '●'},
+    modified = {button = ''},
     pinned = {button = '', filename = true},
 
     -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'
@@ -127,7 +125,6 @@ require('barbar').setup {
   no_name_title = "Unnamed Buffer",
 
   sidebar_filetypes = {
-    -- Use the default values: {event = 'BufWinLeave', text = nil}
     NvimTree = true,
   }
 }
