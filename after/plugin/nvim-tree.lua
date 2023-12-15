@@ -1,8 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.g.NvimTreeIndentMarker = 1
 
 vim.opt.termguicolors = true
-vim.g.NvimTreeIndentMarker = 1
 
 require("nvim-tree").setup()
 
@@ -30,15 +30,19 @@ require("nvim-tree").setup({
       enable = true,
       inline_arrows = true,
       icons = {
-        corner = "󱞩",
-        edge = "󱞩",
-        item = "󱞩",
-        bottom = "|",
+        corner = "└",
+        edge = "│",
+        item = "│",
+        bottom = "─",
         none = " ",
-      },
+        --item = "󱞩",
+      }
     }
   },
-  view = {side = "left"},
+  view = {
+    side = "left",
+    relativenumber = true
+  },
   diagnostics = {
     enable = true,
     show_on_dirs = true,
