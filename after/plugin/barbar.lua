@@ -2,8 +2,8 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
-map('n', '<M-Left>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<M-Right>', '<Cmd>BufferNext<CR>', opts)
+map('n', '<M-Left>', '<Cmd>BufferNext<CR>', opts)
 -- Goto buffer in position...
 map('n', '<M-1>', '<Cmd>BufferGoto 1<CR>', opts)
 map('n', '<M-2>', '<Cmd>BufferGoto 2<CR>', opts)
@@ -22,6 +22,8 @@ map('n', '<M-c>', '<Cmd>BufferClose<CR>', opts)
 vim.g.barbar_auto_setup = false -- disable auto-setup
 
 require('barbar').setup {
+  preset = "powerline",
+
   -- Enable/disable animations
   animation = true,
 
