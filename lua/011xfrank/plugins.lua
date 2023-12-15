@@ -49,4 +49,10 @@ return require('packer').startup(function(use)
     'kevinhwang91/nvim-ufo',
     requires = 'kevinhwang91/promise-async'
   }
+
+  use 'rcarriga/nvim-notify'
+
+  use 'lewis6991/gitsigns.nvim'
+
+  use 'romgrk/barbar.nvim'
 end)

@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -83,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   gruvbox = {
     loaded = true,
@@ -103,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
