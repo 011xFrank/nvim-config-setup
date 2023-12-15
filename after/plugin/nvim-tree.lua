@@ -33,7 +33,7 @@ require("nvim-tree").setup({
         corner = "󱞩",
         edge = "󱞩",
         item = "󱞩",
-        bottom = "",
+        bottom = "|",
         none = " ",
       },
     }
