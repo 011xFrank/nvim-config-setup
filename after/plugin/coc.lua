@@ -37,4 +37,4 @@ keyset("n", "]g", "<Plug>(coc-diagnostic-next)", {silent = true})
 
 -- GoTo code navigation
 keyset("n", "<leader>gd", "<Plug>(coc-definition)", {silent = true})
-keyset("n", "<leader>gD", "<Plug>(coc-type-definition)", {silent = true})
+keyset("n", "<leader>gr", "<Plug>(coc-type-definition)", {silent = true})
