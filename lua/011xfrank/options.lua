@@ -1,3 +1,5 @@
+vim.cmd('set clipboard+=unnamedplus')
+
 local options = {
   number = true,
 	relativenumber = true,
@@ -33,5 +35,3 @@ local options = {
 for option,value in pairs(options) do
 	vim.opt[option] = value
 end
-
-vim.notify = require("notify")

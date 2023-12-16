@@ -50,8 +50,6 @@ return require('packer').startup(function(use)
     requires = 'kevinhwang91/promise-async'
   }
 
-  use 'rcarriga/nvim-notify'
-
   use 'lewis6991/gitsigns.nvim'
 
   use {
