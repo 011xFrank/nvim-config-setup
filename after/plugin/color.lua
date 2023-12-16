@@ -1,7 +1,8 @@
 function colorScheme(index)
   color_schemes = {
     "everforest",
-    "gruvbox"
+    "gruvbox",
+    "nord"
   }
 
   color = color_schemes[index]

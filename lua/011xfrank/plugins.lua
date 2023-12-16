@@ -58,5 +58,9 @@ return require('packer').startup(function(use)
     'akinsho/bufferline.nvim',
     tag = "*"
   }
+
+  use 'majutsushi/tagbar'
+  
+  use 'shaunsingh/nord.nvim'
   
 end)

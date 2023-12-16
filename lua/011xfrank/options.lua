@@ -13,6 +13,7 @@ local options = {
 	hidden = true,
 	title = true,
 	termguicolors = true,
+  filetype = "on",
 
 	mouse = 'a',
 	fileencoding = 'utf-8',
