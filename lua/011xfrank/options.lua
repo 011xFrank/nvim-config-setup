@@ -25,6 +25,7 @@ local options = {
 	tabstop = 2,
 	shiftwidth = 2,
 	laststatus = 2,
+  softtabstop = 2,
 	scrolloff = 10,
   foldcolumn = "1"
 }

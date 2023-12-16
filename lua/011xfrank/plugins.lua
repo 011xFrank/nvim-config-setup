@@ -63,4 +63,12 @@ return require('packer').startup(function(use)
   
   use 'shaunsingh/nord.nvim'
   
+  use { 
+    "anuvyklack/windows.nvim",
+    requires = {
+      "anuvyklack/middleclass",
+      "anuvyklack/animation.nvim"
+    },
+  }
+
 end)

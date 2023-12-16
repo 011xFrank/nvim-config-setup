@@ -31,6 +31,6 @@ keymap("n","<leader>4",":BufferLineGoToBuffer 4<CR>",opts)
 keymap("n","<leader>5",":BufferLineGoToBuffer 5<CR>",opts)
 
 --Tagbar
-keymap("n","<F8>",":TagbarToggle<CR>",opts)
+keymap("n","<F2>",":TagbarToggle<CR>",opts)
 
 
