@@ -30,7 +30,7 @@ local bubbles_theme = {
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'nord',
+    theme = 'everforest',
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
