@@ -5,7 +5,9 @@ local highlight = {
 
 require("ibl").setup{
   enabled = true,
-  indent = {char = "┃"},
+  indent = {
+    char = "┃",
+  },
   exclude = {
     filetypes = {
       "terminal",
