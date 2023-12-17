@@ -1,8 +1,3 @@
-
-local highlight = {
-    "indentColor1",
-}
-
 require("ibl").setup{
   enabled = true,
   indent = {
@@ -16,6 +11,12 @@ require("ibl").setup{
     }
   }
 }
+
+
+--local highlight = {
+--    "indentColor1",
+--}
+
 
 --local hooks = require("ibl.hooks")
 --hooks.register(hooks.type.HIGHLIGHT_SETUP, function()

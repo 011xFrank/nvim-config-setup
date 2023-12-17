@@ -1,8 +1,6 @@
 vim.opt.backup = false
 vim.opt.writebackup = false
-
 vim.opt.updatetime = 300
-
 vim.opt.signcolumn = "yes"
 
 local keyset = vim.keymap.set

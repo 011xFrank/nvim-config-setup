@@ -1,3 +1,8 @@
+-- Bubbles config for lualine
+-- Author: lokesh-krishna
+-- MIT license, see LICENSE for more details.
+
+-- stylua: ignore
 local colors = {
   blue   = '#80a0ff',
   cyan   = '#79dac8',
@@ -26,11 +31,9 @@ local bubbles_theme = {
   },
 }
 
-
 require('lualine').setup {
   options = {
-    icons_enabled = true,
-    theme = 'everforest',
+    theme = "jellybeans",
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },

@@ -52,11 +52,6 @@ return require('packer').startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
-  use {
-    'akinsho/bufferline.nvim',
-    tag = "*"
-  }
-
   use 'majutsushi/tagbar'
   
   use 'shaunsingh/nord.nvim'

@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["animation.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/animation.nvim",
+    url = "https://github.com/anuvyklack/animation.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  middleclass = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/middleclass",
+    url = "https://github.com/anuvyklack/middleclass"
+  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nord.nvim",
@@ -118,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
-  },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["windows.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/windows.nvim",
+    url = "https://github.com/anuvyklack/windows.nvim"
   }
 }
 

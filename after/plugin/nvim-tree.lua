@@ -1,10 +1,9 @@
+local opts = {noremap = true,silent = true}
+local keymap = vim.api.nvim_set_keymap
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-vim.g.NvimTreeIndentMarker = 1
 
-vim.opt.termguicolors = true
-
-require("nvim-tree").setup()
 
 require("nvim-tree").setup({
   sort = { sorter = "case_sensitive", },
@@ -35,13 +34,12 @@ require("nvim-tree").setup({
         item = "│",
         bottom = "─",
         none = " ",
-        --item = "󱞩",
       }
     }
   },
   view = {
     side = "left",
-    relativenumber = true
+    relativenumber = true,
   },
   diagnostics = {
     enable = true,
@@ -57,4 +55,7 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+--Keymap
+keymap("n","<leader>n",":NvimTreeToggle<cr>",opts)
 
