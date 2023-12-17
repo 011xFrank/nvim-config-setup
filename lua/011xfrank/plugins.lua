@@ -43,8 +43,6 @@ return require('packer').startup(function(use)
 
   use 'lukas-reineke/indent-blankline.nvim'
 
-  use {'neoclide/coc.nvim', branch = 'release'}
-  
   use {
     'kevinhwang91/nvim-ufo',
     requires = 'kevinhwang91/promise-async'
@@ -62,6 +60,23 @@ return require('packer').startup(function(use)
       "anuvyklack/middleclass",
       "anuvyklack/animation.nvim"
     },
+  }
+
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig"
+  }
+  
+  use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "L3MON4D3/Luasnip",
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets"
+    }
   }
 
 end)
