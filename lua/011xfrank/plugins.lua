@@ -50,11 +50,9 @@ return require('packer').startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
-  use 'majutsushi/tagbar'
-  
   use 'shaunsingh/nord.nvim'
-  
-  use { 
+
+  use {
     "anuvyklack/windows.nvim",
     requires = {
       "anuvyklack/middleclass",
@@ -78,5 +76,16 @@ return require('packer').startup(function(use)
       "rafamadriz/friendly-snippets"
     }
   }
+  
+  use {
+    "utilyre/barbecue.nvim",
+    tag = "*",
+    requires = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons",
+    }
+  }
+
+  use 'simrat39/symbols-outline.nvim'
 
 end)

@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/animation.nvim",
     url = "https://github.com/anuvyklack/animation.nvim"
   },
+  ["barbecue.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -164,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -199,10 +209,10 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
-  tagbar = {
+  ["symbols-outline.nvim"] = {
     loaded = true,
-    path = "/home/frank/.local/share/nvim/site/pack/packer/start/tagbar",
-    url = "https://github.com/majutsushi/tagbar"
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
