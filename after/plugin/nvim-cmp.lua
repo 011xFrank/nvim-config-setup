@@ -75,5 +75,10 @@ cmp.setup({
   },
   experimental = {
     ghost_text = true
+  },
+  window = {
+    documentation = {
+      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    },
   }
 })
