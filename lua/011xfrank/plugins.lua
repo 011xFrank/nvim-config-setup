@@ -6,26 +6,45 @@ return require('packer').startup(function(use)
 
   use 'sainnhe/everforest'
 
-  use 'morhetz/gruvbox'
-
-  use {
-    'nvim-treesitter/nvim-treesitter',
-      run = function()
-        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-        ts_update()
-      end,
-  }
-
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
-
   use 'nvim-tree/nvim-web-devicons'
 
   use 'nvim-tree/nvim-tree.lua'
 
   use 'windwp/nvim-autopairs'
+
+  use {"akinsho/toggleterm.nvim", tag = '*'}
+
+  use 'lukas-reineke/indent-blankline.nvim'
+
+  use 'lewis6991/gitsigns.nvim'
+
+  use 'simrat39/symbols-outline.nvim'
+
+  use 'xiyaowong/transparent.nvim'
+
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig"
+  }
+
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'make'
+  }
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+      opt = true
+    }
+  }
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
@@ -35,22 +54,10 @@ return require('packer').startup(function(use)
   }
 
   use {
-    'nvim-telescope/telescope-fzf-native.nvim',
-    run = 'make'
-  }
-
-  use {"akinsho/toggleterm.nvim", tag = '*'}
-
-  use 'lukas-reineke/indent-blankline.nvim'
-
-  use {
     'kevinhwang91/nvim-ufo',
     requires = 'kevinhwang91/promise-async'
   }
 
-  use 'lewis6991/gitsigns.nvim'
-
-  use 'shaunsingh/nord.nvim'
 
   use {
     "anuvyklack/windows.nvim",
@@ -61,12 +68,6 @@ return require('packer').startup(function(use)
   }
 
   use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig"
-  }
-  
-  use {
     "hrsh7th/nvim-cmp",
     requires = {
       "hrsh7th/cmp-buffer",
@@ -76,7 +77,7 @@ return require('packer').startup(function(use)
       "rafamadriz/friendly-snippets"
     }
   }
-  
+
   use {
     "utilyre/barbecue.nvim",
     tag = "*",
@@ -85,8 +86,4 @@ return require('packer').startup(function(use)
       "nvim-tree/nvim-web-devicons",
     }
   }
-
-  use 'simrat39/symbols-outline.nvim'
-  
-  use 'xiyaowong/transparent.nvim'
 end)
