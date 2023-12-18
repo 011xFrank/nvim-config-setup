@@ -1,13 +1,9 @@
+
+local servers = { "clangd", "lua_ls", "tsserver", "pyright", "html", "cssls" }
+
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = {
-    "clangd",
-    "lua_ls",
-    "tsserver",
-    "pyright",
-    "html",
-    "cssls"
-  }
+  ensure_installed = servers
 })
 
 local on_attach = function(_,_)
@@ -20,27 +16,8 @@ local on_attach = function(_,_)
   vim.keymap.set("n","K",vim.lsp.buf.hover,{})
 end
 
-require("lspconfig").clangd.setup{
-  on_attach = on_attach,
-}
-
-require("lspconfig").lua_ls.setup{
-  on_attach = on_attach,
-}
-
-require("lspconfig").tsserver.setup{
-  on_attach = on_attach,
-}
-
-require("lspconfig").pyright.setup{
-  on_attach = on_attach,
-}
-
-require("lspconfig").html.setup{
-  on_attach = on_attach,
-}
-
-require("lspconfig").cssls.setup{
-  on_attach = on_attach,
-}
-
+for _, server in ipairs(servers) do
+  require("lspconfig")[server].setup{
+    on_attach = on_attach,
+  }
+end
