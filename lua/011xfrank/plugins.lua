@@ -22,20 +22,16 @@ return require('packer').startup(function(use)
 
   use 'xiyaowong/transparent.nvim'
 
+  use {'nvim-telescope/telescope-fzf-native.nvim',run = 'make'}
+
+  use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'}
+  
+  use {'nvim-telescope/telescope-ui-select.nvim' }
+
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig"
-  }
-
-  use {
-    'nvim-telescope/telescope-fzf-native.nvim',
-    run = 'make'
-  }
-
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
   }
 
   use {
@@ -55,7 +51,9 @@ return require('packer').startup(function(use)
 
   use {
     'kevinhwang91/nvim-ufo',
-    requires = 'kevinhwang91/promise-async'
+    requires = {
+      'kevinhwang91/promise-async'
+    }
   }
 
 

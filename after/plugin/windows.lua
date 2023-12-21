@@ -6,7 +6,7 @@ local function cmd(command)
    return table.concat({ '<Cmd>', command, '<CR>' })
 end
 
-vim.keymap.set('n', '<C-w>=', cmd 'WindowsEqualize')
+vim.keymap.set('n', '<Leader>w', cmd ':WindowsEqualize<CR>')
 
 local windows = require("windows")
 windows.setup({})

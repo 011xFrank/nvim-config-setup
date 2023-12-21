@@ -13,4 +13,7 @@ keymap("n","<C-Right>","<C-w>l",opts)
 --Nvim default Folding
 keymap('n', '<C-\\>', 'za',opts)
 
+--Buffer Delete
 keymap("n","bd",":bd<CR>",opts)
+
+
