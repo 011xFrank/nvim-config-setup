@@ -18,8 +18,8 @@ vim.opt.mouse = 'a'
 vim.opt.fileencoding = 'utf-8'
 vim.opt.titlestring = 'NeoVim [ %t ]'
 vim.opt.signcolumn = "yes"
-vim.opt.foldmethod="indent"
-vim.opt.clipboard:append("unnamedplus")
+vim.opt.foldmethod = "indent"
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.sidescrolloff = 10
 vim.opt.tabstop = 2
