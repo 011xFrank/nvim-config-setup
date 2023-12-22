@@ -40,6 +40,7 @@ require("nvim-tree").setup({
   view = {
     side = "left",
     relativenumber = true,
+    width = 40
   },
   diagnostics = {
     enable = true,
