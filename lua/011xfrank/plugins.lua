@@ -4,6 +4,8 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use 'sainnhe/gruvbox-material'
+
   use 'sainnhe/everforest'
 
   use 'nvim-tree/nvim-web-devicons'

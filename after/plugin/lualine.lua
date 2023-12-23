@@ -33,7 +33,7 @@ local bubbles_theme = {
 
 require('lualine').setup {
   options = {
-    theme = "jellybeans",
+    theme = "gruvbox-material",
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
