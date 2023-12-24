@@ -1,14 +1,9 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
   use 'rose-pine/neovim'
-
-  use 'sainnhe/gruvbox-material'
-
-  use 'sainnhe/everforest'
 
   use 'nvim-tree/nvim-web-devicons'
 
@@ -26,6 +21,8 @@ return require('packer').startup(function(use)
 
   use 'xiyaowong/transparent.nvim'
 
+  use 'nvim-lualine/lualine.nvim'
+
   use {'nvim-telescope/telescope-fzf-native.nvim',run = 'make'}
 
   use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'}
@@ -36,14 +33,6 @@ return require('packer').startup(function(use)
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig"
-  }
-
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = {
-      'nvim-tree/nvim-web-devicons',
-      opt = true
-    }
   }
 
   use {
@@ -85,7 +74,6 @@ return require('packer').startup(function(use)
     tag = "*",
     requires = {
       "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons",
     }
   }
 end)

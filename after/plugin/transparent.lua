@@ -6,3 +6,4 @@ require("transparent").setup({
 })
 
 require('transparent').clear_prefix('NvimTree')
+require('transparent').clear_prefix('gitsigns')
