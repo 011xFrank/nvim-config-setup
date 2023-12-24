@@ -49,7 +49,6 @@ return require('packer').startup(function(use)
     }
   }
 
-
   use {
     "anuvyklack/windows.nvim",
     requires = {
