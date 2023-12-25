@@ -1,10 +1,8 @@
-vim.cmd('colorscheme rose-pine')
-
 require('rose-pine').setup({
 	--- @usage 'auto'|'main'|'moon'|'dawn'
 	variant = 'moon',
 	--- @usage 'main'|'moon'|'dawn'
-  dark_variant = 'main',
+	dark_variant = 'main',
 	bold_vert_split = false,
 	dim_nc_background = false,
 	disable_background = false,
@@ -17,7 +15,7 @@ require('rose-pine').setup({
 		background_nc = '_experimental_nc',
 		panel = 'surface',
 		panel_nc = 'base',
-		border = 'highlight_med',
+		border = 'rose',
 		comment = 'muted',
 		link = 'iris',
 		punctuation = 'subtle',
@@ -54,3 +52,6 @@ require('rose-pine').setup({
 		Search = { bg = 'gold', inherit = false },
 	}
 })
+
+-- Set colorscheme after options
+vim.cmd('colorscheme rose-pine')

@@ -23,8 +23,6 @@ return require('packer').startup(function(use)
 
   use 'nvim-lualine/lualine.nvim'
 
-  use {'j-hui/fidget.nvim',tag = "v1.1.0"}
-
   use {'nvim-telescope/telescope-fzf-native.nvim',run = 'make'}
 
   use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'}
