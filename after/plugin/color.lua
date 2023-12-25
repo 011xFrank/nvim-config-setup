@@ -1,3 +1,5 @@
+vim.cmd('colorscheme rose-pine')
+
 require('rose-pine').setup({
 	--- @usage 'auto'|'main'|'moon'|'dawn'
 	variant = 'moon',
@@ -52,6 +54,3 @@ require('rose-pine').setup({
 		Search = { bg = 'gold', inherit = false },
 	}
 })
-
--- Set colorscheme after options
-vim.cmd('colorscheme rose-pine')
