@@ -1,7 +1,8 @@
 require("ibl").setup({
   enabled = true,
   indent = {
-    char = "┃",
+    char = "▏"
+    --char = "┃",
   },
   exclude = {
     filetypes = {
@@ -11,7 +12,7 @@ require("ibl").setup({
     }
   },
   scope = {
-    enabled = true,
+    enabled = false,
     show_start = false,
     show_end = false,
     highlight = {

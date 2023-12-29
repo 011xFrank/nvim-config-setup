@@ -1,5 +1,5 @@
 
-local servers = { "clangd", "lua_ls", "tsserver", "pyright", "html", "cssls" }
+local servers = { "clangd", "lua_ls", "tsserver" , "html", "cssls" }
 
 require("mason").setup()
 require("mason-lspconfig").setup({

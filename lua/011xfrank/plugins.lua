@@ -29,6 +29,8 @@ return require('packer').startup(function(use)
 
   use {'nvim-telescope/telescope-ui-select.nvim' }
 
+  use {"kylechui/nvim-surround",tag = "*",}
+
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",

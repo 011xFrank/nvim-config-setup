@@ -21,10 +21,10 @@ vim.opt.signcolumn = "yes"
 vim.opt.foldmethod = "indent"
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.sidescrolloff = 10
+vim.opt.sidescrolloff = 5
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
-vim.opt.laststatus = 2
 vim.opt.softtabstop = 2
+vim.opt.laststatus = 2
 vim.opt.scrolloff = 10
 vim.opt.updatetime = 50
