@@ -1,8 +1,7 @@
 require("ibl").setup({
   enabled = true,
   indent = {
-    char = "▏"
-    --char = "┃",
+    char = "┃",
   },
   exclude = {
     filetypes = {
