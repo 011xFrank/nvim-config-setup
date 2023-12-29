@@ -234,6 +234,11 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/transparent.nvim",
     url = "https://github.com/xiyaowong/transparent.nvim"
   },
+  vimwiki = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
+  },
   ["windows.nvim"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/windows.nvim",

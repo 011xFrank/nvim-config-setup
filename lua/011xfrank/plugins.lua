@@ -1,6 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+  use 'vimwiki/vimwiki'
+
   use 'rose-pine/neovim'
 
   use 'windwp/nvim-autopairs'
@@ -10,6 +12,8 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
 
   use 'lewis6991/gitsigns.nvim'
+
+  use 'gen740/SmoothCursor.nvim'
 
   use 'nvim-lualine/lualine.nvim'
 
