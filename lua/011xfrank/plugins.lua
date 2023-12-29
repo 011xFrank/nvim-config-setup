@@ -1,54 +1,46 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-
   use 'rose-pine/neovim'
-
-  use 'nvim-tree/nvim-web-devicons'
-
-  use 'nvim-tree/nvim-tree.lua'
 
   use 'windwp/nvim-autopairs'
 
-  use {"akinsho/toggleterm.nvim", tag = '*'}
+  use 'wbthomason/packer.nvim'
 
-  use 'lukas-reineke/indent-blankline.nvim'
+  use 'nvim-tree/nvim-tree.lua'
 
   use 'lewis6991/gitsigns.nvim'
 
-  use 'simrat39/symbols-outline.nvim'
+  use 'nvim-lualine/lualine.nvim'
 
   use 'xiyaowong/transparent.nvim'
 
-  use 'nvim-lualine/lualine.nvim'
+  use 'nvim-tree/nvim-web-devicons'
 
-  use {'nvim-telescope/telescope-fzf-native.nvim',run = 'make'}
+  use 'simrat39/symbols-outline.nvim'
+
+  use 'lukas-reineke/indent-blankline.nvim'
+
+  use {"kylechui/nvim-surround",tag = "*",}
+
+  use {"akinsho/toggleterm.nvim", tag = '*'}
+
+  use {'nvim-telescope/telescope-ui-select.nvim'}
 
   use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'}
 
-  use {'nvim-telescope/telescope-ui-select.nvim' }
+  use {'nvim-telescope/telescope-fzf-native.nvim',run = 'make'}
 
-  use {"kylechui/nvim-surround",tag = "*",}
+  use {'kevinhwang91/nvim-ufo',requires = {'kevinhwang91/promise-async'}}
+
+  use {"utilyre/barbecue.nvim",tag = "*",requires = {"SmiteshP/nvim-navic",}}
+
+  use {'nvim-telescope/telescope.nvim', tag = '0.1.x',requires = {'nvim-lua/plenary.nvim'}}
 
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig"
-  }
-
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.x',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    }
-  }
-
-  use {
-    'kevinhwang91/nvim-ufo',
-    requires = {
-      'kevinhwang91/promise-async'
-    }
   }
 
   use {
@@ -70,11 +62,4 @@ return require('packer').startup(function(use)
     }
   }
 
-  use {
-    "utilyre/barbecue.nvim",
-    tag = "*",
-    requires = {
-      "SmiteshP/nvim-navic",
-    }
-  }
 end)
