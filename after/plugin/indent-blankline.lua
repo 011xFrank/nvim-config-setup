@@ -7,7 +7,8 @@ require("ibl").setup({
     filetypes = {
       "terminal",
       "Nvim-Tree",
-      "packer"
+      "packer",
+      "startify"
     }
   },
   scope = {
