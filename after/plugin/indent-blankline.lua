@@ -8,7 +8,8 @@ require("ibl").setup({
       "terminal",
       "Nvim-Tree",
       "packer",
-      "startify"
+      "startify",
+      "vimwiki"
     }
   },
   scope = {

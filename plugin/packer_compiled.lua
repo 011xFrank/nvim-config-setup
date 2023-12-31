@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/Luasnip",
     url = "https://github.com/L3MON4D3/Luasnip"
   },
+  ["SmoothCursor.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/SmoothCursor.nvim",
+    url = "https://github.com/gen740/SmoothCursor.nvim"
+  },
   ["animation.nvim"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/animation.nvim",
@@ -143,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/neovim",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["notifier.nvim"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/notifier.nvim",
+    url = "https://github.com/vigoux/notifier.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -233,6 +243,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/transparent.nvim",
     url = "https://github.com/xiyaowong/transparent.nvim"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   },
   vimwiki = {
     loaded = true,
