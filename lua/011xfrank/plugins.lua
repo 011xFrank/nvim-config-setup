@@ -3,9 +3,9 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   use 'vimwiki/vimwiki'
 
-  use 'mhinz/vim-startify'
-
   use 'rose-pine/neovim'
+
+  use 'mhinz/vim-startify'
 
   use 'windwp/nvim-autopairs'
 
