@@ -1,31 +1,31 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  use 'vimwiki/vimwiki'
+  use {"vimwiki/vimwiki"}
 
-  use 'rose-pine/neovim'
+  use {"rose-pine/neovim"}
 
-  use 'mhinz/vim-startify'
+  use {"mhinz/vim-startify"}
 
-  use 'windwp/nvim-autopairs'
+  use {"windwp/nvim-autopairs"}
 
-  use 'wbthomason/packer.nvim'
+  use {"wbthomason/packer.nvim"}
 
-  use 'nvim-tree/nvim-tree.lua'
+  use {"nvim-tree/nvim-tree.lua"}
 
-  use 'lewis6991/gitsigns.nvim'
+  use {"lewis6991/gitsigns.nvim"}
 
-  use 'gen740/SmoothCursor.nvim'
+  use {"gen740/SmoothCursor.nvim"}
 
-  use 'nvim-lualine/lualine.nvim'
+  use {"nvim-lualine/lualine.nvim"}
 
-  use 'xiyaowong/transparent.nvim'
+  use {"xiyaowong/transparent.nvim"}
 
-  use 'nvim-tree/nvim-web-devicons'
+  use {"nvim-tree/nvim-web-devicons"}
 
-  use 'simrat39/symbols-outline.nvim'
+  use {"simrat39/symbols-outline.nvim"}
 
-  use 'lukas-reineke/indent-blankline.nvim'
+  use {"lukas-reineke/indent-blankline.nvim"}
 
   use {"kylechui/nvim-surround",tag = "*",}
 

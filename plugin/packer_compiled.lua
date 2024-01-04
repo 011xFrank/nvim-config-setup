@@ -149,11 +149,6 @@ _G.packer_plugins = {
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/neovim",
     url = "https://github.com/rose-pine/neovim"
   },
-  ["notifier.nvim"] = {
-    loaded = true,
-    path = "/home/frank/.local/share/nvim/site/pack/packer/start/notifier.nvim",
-    url = "https://github.com/vigoux/notifier.nvim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

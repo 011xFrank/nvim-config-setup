@@ -14,8 +14,8 @@ require("nvim-tree").setup({
         default = "",
         symlink = "",
         folder = {
-          arrow_open = "󱖘",
-          arrow_closed = "",
+          arrow_open = "",
+          arrow_closed = "󱖘",
           default = "",
           open = "󰝰",
           empty = "󰉖",
@@ -29,11 +29,11 @@ require("nvim-tree").setup({
       enable = true,
       inline_arrows = true,
       icons = {
-        corner = "└",
-        edge = "│",
-        item = "│",
+        corner = "󰇙",
+        edge = " ",
+        item = "┃",
         bottom = "─",
-        none = " ",
+        none = " "
       }
     }
   },
@@ -53,10 +53,9 @@ require("nvim-tree").setup({
     }
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
 })
 
---Keymap
 keymap("n","<leader>n",":NvimTreeToggle<cr>",opts)
 
